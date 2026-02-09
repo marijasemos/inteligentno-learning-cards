@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: linear-gradient(135deg, #6a5cff, #4facfe);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen {
+  display: none;
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+.screen.active {
+  display: block;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  background: white;
+  color: #5b4bff;
+  font-weight: bold;
+}
+
+.secondary {
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+.correct { background: #2ecc71; color: white; }
+.wrong { background: #e74c3c; color: white; }
+
+.card {
+  background: white;
+  color: #333;
+  border-radius: 16px;
+  padding: 24px;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.actions {
+  display: none;
+  gap: 10px;
+}
+
+.actions button {
+  width: 48%;
+}
+
+table {
+  width: 100%;
+  background: white;
+  color: #333;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+td, th {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+tr {
+  cursor: pointer;
+}

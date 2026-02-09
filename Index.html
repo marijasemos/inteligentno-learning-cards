@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning Cards</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="home" class="screen active">
+  <h1>Learning Cards</h1>
+  <button onclick="startGame()">Zapocni rundu</button>
+  <button onclick="openAllQuestions()">Sva pitanja</button>
+</div>
+
+<div id="game" class="screen">
+  <div id="card" class="card" onclick="flipCard()"></div>
+  <div id="actions" class="actions">
+    <button class="correct" onclick="answer(true)">Tacno</button>
+    <button class="wrong" onclick="answer(false)">Netacno</button>
+  </div>
+  <button onclick="endGame()">Zavrsi igru</button>
+  <button class="secondary" onclick="goHome()">Nazad</button>
+</div>
+
+<div id="results" class="screen">
+  <h2>Rezultati runde</h2>
+  <table id="resultsTable"></table>
+  <button class="secondary" onclick="goHome()">Nazad</button>
+</div>
+
+<div id="allQuestions" class="screen">
+  <h2>Sva pitanja</h2>
+  <table id="allQuestionsTable"></table>
+  <button class="secondary" onclick="goHome()">Nazad</button>
+</div>
+
+<script src="app.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+</body>
+</html>

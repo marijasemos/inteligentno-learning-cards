@@ -1,0 +1,15 @@
+{
+  "name": "Learning Cards",
+  "short_name": "Cards",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#6a5cff",
+  "theme_color": "#6a5cff",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
